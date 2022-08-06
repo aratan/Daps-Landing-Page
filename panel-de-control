@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="files/bootstrap.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <!--gundb-->
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gun/lib/webrtc.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Hello, world!</title>
+  <style>
+    @font-face {
+      font-family: 'Open Sans Regular';
+      font-style: normal;
+      font-weight: 400;
+      src: url('moz-extension://b53f8447-8ce7-4dc0-8e2a-25ed0619252e/fonts/open_sans/open-sans-v18-latin-regular.woff');
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: 'Open Sans Bold';
+      font-style: normal;
+      font-weight: 800;
+      src: url('moz-extension://b53f8447-8ce7-4dc0-8e2a-25ed0619252e/fonts/open_sans/open-sans-v18-latin-800.woff');
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <!-- Menu -->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+    <!-- chat <p id="escribe">Login</p> -->
+    <form id="sign">
+      <input id="alias" placeholder="Víctor " value="Víctor ">
+      <input id="pass" type="text" placeholder="Ye774xrc.Z " value="Ye774xrc.Z ">
+      <input id="in" type="submit" value="Cuenta">
+      <input id="up" type="button" value="Registro">
+    </form>
+    
+    <div id="send">
+
+      <form id="said">
+        <input id="say">
+        <input id="speak" class="btn btn-secondary" type="submit" value="Envio">
+      </form>
+    </div>
+    <!--fin-->
+
+
+  </nav>
+
+
+  <!-- portada -->
+
+  <div class="card bg-dark text-white">
+    <img src="files/77631.jpg" class="card-img" alt="..." height="350">
+    <div class="card-img-overlay">
+      <h1 class="card-text">HELLO, WORLD!</h1>
+      <span id="escribe"></spam>
+    </div>
+  </div>
+
+  <!-- Entrada -->
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="display-3 text-dark">This is a hacker community</h3>
+      <p class="text-dark">Application development with artificial intelligence, exploratory data analysis, programming
+        in ipfs and web3 and hybrid applications.
+        We are digital nomads, console cowboys, hackers..</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    </div>
+  </div>
+
+
+  <!-- tarjetas -->
+
+  <div class="container marketing">
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">The first chapter of your life.
+          <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">The first chapter of your life. It will blow your mind. There is great content here for your
+          tech projects and startups. Imagine something that will revolutionize the world, exciting here.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="files/startup-investors.png" role="img" aria-label="Placeholder: 500x500"
+          preserveaspectratio="xMidYMid slice" focusable="false" width="500" height="500">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+        </rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
+            yourself.</span></h2>
+        <p class="lead">An opportunity? Of course. More Artificial Intelligence, Blockchain, Application Development,
+          Information Security and Engineering content here to give you an idea of how real-world content works.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="files/blockchain-article.jpg" role="img" aria-label="Placeholder: 500x500"
+          preserveaspectratio="xMidYMid slice" focusable="false" width="500" height="500">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+
+
+        </rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span>
+        </h2>
+        <p class="lead">And yes, this is the last block of content representative of leading edge development and
+          technology positioning. Once again, coders and hackers united to develop the technology to its limit, just to
+          give you a better vision of what it would look like with your real project. Your initiative.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="files/5cb68269688ec.jpeg" role="img" aria-label="Placeholder: 500x500"
+          preserveaspectratio="xMidYMid slice" focusable="false" width="500" height="500">
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+
+
+        </rect>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+
+  <!-- Cambiamos de tema -->
+
+  <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold text-dark">Custom Consulting</h1>
+      <p class="col-md-8 fs-4 text-dark">Using a range of tools from artificial intelligence, blockchain, web3, hybrid
+        application development. Consult to your liking.</p>
+      <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+      <!-- Equipo -->
+      <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="mb-4">TEAM</h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-dark">
+              Accelerate the world’s transition to industry 4 sector.
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #9d789b;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="files/img%25201.webp" class="rounded-circle img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4 text-dark">Maria Smantha</h4>
+                <hr>
+                <p class="dark-grey-text mt-4 text-dark">
+                  <i class="fas fa-quote-left pe-2"></i>Founder CTO and Chief Scientist.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #7a81a8;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="files/img%25202.webp" class="rounded-circle img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4 text-dark">Lisa Cudrow</h4>
+                <hr>
+                <p class="dark-grey-text mt-4 text-dark">
+                  <i class="fas fa-quote-left pe-2"></i>CEO and Executive Director.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="card testimonial-card">
+              <div class="card-up" style="background-color: #6d5b98;"></div>
+              <div class="avatar mx-auto bg-white">
+                <img src="files/img%25209.webp" class="rounded-circle img-fluid">
+              </div>
+              <div class="card-body">
+                <h4 class="mb-4 text-dark">John Smith</h4>
+                <hr>
+                <p class="dark-grey-text mt-4 text-dark">
+                  <i class="fas fa-quote-left pe-2"></i>CMO.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <!-- Llamada a la accion -->
+
+  <div class="card text-center">
+    <div class="card-header"> ... </div>
+    <div class="card-body">
+      <h5 class="card-title text-dark">Patreon</h5>
+      <p class="card-text text-dark">Patreon and crypto.</p>
+      <a href="#" class="btn btn-primary">Donation</a>
+    </div>
+    <div class="card-footer text-muted"> ... </div>
+  </div>
+
+
+  <!-- videos -->
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <video controls="controls" width="320" height="240">
+              <source src="files/Qmbqi8861BxHCDFDyu6Ks3Xm4ZJD7KV4PLUoAeypdZNKyo.html">
+            </video>
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+
+
+              <div class="card-body">
+                <p class="card-text text-dark">We are passionate about technology, we like to create and take it to its
+                  limits, so we participate and create hackathons, to be always with the talent and promote creativity.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-dark">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-dark">Edit</button>
+                  </div>
+                  <small class="text-muted text-dark">9 mins</small>
+                </div>
+              </div>
+            </rect>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video controls="controls" width="320" height="240">
+              <source src="files/Qmbqi8861BxHCDFDyu6Ks3Xm4ZJD7KV4PLUoAeypdZNKyo.html">
+            </video>
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+
+
+              <div class="card-body">
+                <p class="card-text text-dark">Next AI hackathon for February 2023, where we will participate at an
+                  international level.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-dark">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary text-dark">Edit</button>
+                  </div>
+                  <small class="text-muted text-dark">9 mins</small>
+                </div>
+              </div>
+            </rect>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video controls="controls" width="320" height="240">
+              <source src="files/Qmbqi8861BxHCDFDyu6Ks3Xm4ZJD7KV4PLUoAeypdZNKyo.html">
+            </video>
+
+            <div class="card-body">
+              <p class="card-text text-dark">We have a foundational commitment to freedom of expression and national
+                sovereignty..</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary text-dark">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary text-dark">Edit</button>
+                </div>
+                <small class="text-muted text-dark">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="files/52911hd.jpg" alt="" width="72" height="57">
+
+        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Quickly design and customize the technology you need for your projects with us, the
+            world's
+            most popular open source toolset, including Sass variables and mixins, a consulting and support system for
+            your
+            build, and powerful technology strategies.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+
+            <button onclick="pago('0x3317eba7cF6a56a9b81A6B7148e4F5B2d67027bc','0x5873500000000')" type="button"
+              class="btn btn-outline-secondary btn-lg px-4">Donation</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-dark">
+              <i class="fas fa-gem me-3"></i>Aratan Coders
+            </h6>
+            <p class="text-dark">
+              Non-profit organization.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-dark">
+              Services
+            </h6>
+            <p class="text-dark">
+              <a href="#!" class="text-reset">Smart Contract</a>
+            </p>
+            <p class="text-dark">
+              <a href="#!" class="text-reset">Dapps</a>
+            </p>
+            <p class="text-dark">
+              <a href="#!" class="text-reset">Apps hybrid</a>
+            </p>
+            <p class="text-dark">
+              <a href="#!" class="text-reset">Machine Learning</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 text-dark">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset text-dark">Patreon</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-dark">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-dark">Consulting</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset text-dark">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p class="text-dark"><i class="fas fa-home me-3"></i> Madrid, MAD 48940, ES</p>
+            <p class="text-dark">
+              <i class="fas fa-envelope me-3"></i>
+              aratancoders.blockchain@ud.me
+            </p>
+            <p class="text-dark"><i class="fas fa-phone me-3"></i> + 34 640 25 73 40</p>
+            <p class="text-dark"><i class="fas fa-print me-3"></i> Only Whatsapp </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://aratancoders.blockchain/">AratanCoders.Blockchain</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="files/bootstrap.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
+  <script src="files/index.js"></script>
+
+  <script>
+    function pago(yourAddress, value) {
+
+      // a quien vas a enviar , cuanto y en que red '0xc17a1EA090987F355312F24c28DFfa370f2f9cDc'
+      const yourAddress = yourAddress //'0xc17a1EA090987F355312F24c28DFfa370f2f9cDc'
+      const value = value //'0x5873500000000' // an ether has 18 decimals, here in hex.0x5873500000000
+      const desiredNetwork = '1' // '1' is the Ethereum main network ID.
+
+      // Detect whether the current browser is ethereum-compatible,
+      // and handle the case where it isn't:
+      if (typeof window.ethereum === 'undefined') {
+        alert('Looks like you need a Dapp browser to get started.')
+        alert('Consider installing MetaMask!')
+
+      } else {
+
+        // In the case the user has MetaMask installed, you can easily
+        // ask them to sign in and reveal their accounts:
+        ethereum.request({ method: 'eth_requestAccounts' })
+
+          // Remember to handle the case they reject the request:
+          .catch(function (reason) {
+            if (reason === 'User rejected provider access') {
+              // The user didn't want to sign in!
+            } else {
+              // This shouldn't happen, so you might want to log this...
+              alert('There was an issue signing you in.')
+            }
+          })
+
+          // In the case they approve the log-in request, you'll receive their accounts:
+          .then(function (accounts) {
+            // You also should verify the user is on the correct network:
+            if (ethereum.networkVersion !== desiredNetwork) {
+              alert('This application requires the main network, please switch it in your MetaMask UI.')
+
+              // We plan to provide an API to make this request in the near future.
+              // https://github.com/MetaMask/metamask-extension/issues/3663
+            }
+
+            // Once you have a reference to user accounts,
+            // you can suggest transactions and signatures:
+            const account = accounts[0]
+            sendEtherFrom(account, function (err, transaction) {
+              if (err) {
+                return alert(`Sorry you weren't able to contribute!`)
+              }
+
+              alert('Thanks for your successful contribution!')
+            })
+
+          })
+      }
+
+      function sendEtherFrom(account, callback) {
+
+        // We're going to use the lowest-level API here, with simpler example links below
+        const method = 'eth_sendTransaction'
+        const params = [{
+          from: account,
+          to: yourAddress,
+          value: value,
+        }]
+
+        // Methods that require user authorization like this one will prompt a user interaction.
+        // Other methods (like reading from the blockchain) may not.
+        ethereum.request({ method, params })
+          .then((txHash) => {
+
+            alert('Gracias por tu generosidad!')
+
+            // You can poll the blockchain to see when this transaction has been mined:
+            pollForCompletion(txHash, callback)
+          })
+          .catch((error) => {
+            if (error.code === 4001) { // 4001: User rejected request
+              return alert(`No podemos tomar su dinero sin su permiso.`)
+            }
+            alert('Hubo un problema. Vuelve a intentarlo..')
+          })
+      }
+
+      function pollForCompletion(txHash, callback) {
+        let calledBack = false
+
+        // Normal ethereum blocks are approximately every 15 seconds.
+        // Here we'll poll every 2 seconds.
+        const checkInterval = setInterval(function () {
+
+          ethereum.request({
+            method: 'eth_getTransactionByHash',
+            params: [txHash],
+          })
+            .then((transaction) => {
+
+              if (calledBack || !transaction) {
+                // We've either already seen the mined transaction,
+                // or no transaction was returned, indicating that it
+                // hasn't been mined yet.
+                return
+              }
+
+              // The transaction has been mined.
+              clearInterval(checkInterval)
+              calledBack = true
+              callback(null, transaction)
+            })
+            .catch((error) => {
+
+              if (calledBack) {
+                return
+              }
+
+              // Some unknown error occurred.
+              callback(error)
+            })
+        }, 2000);
+      }
+      //fin
+    }
+  </script>
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/gun/examples/jquery.js"></script>-->
+
+  <script>
+
+    var gun = Gun(['http://localhost:8765/gun', 'https://gunjs.herokuapp.com/gun']);
+    var user = gun.user();
+    var say = [];
+
+    document.querySelector("#send").style.display = 'none';
+    /* inicio bien */
+    document.getElementById("up").addEventListener('click', (e) => {
+      user.create(document.getElementById("alias").value, document.getElementById("pass").value);
+    });
+
+
+    document.getElementById("sign").addEventListener('submit', (e) => {
+      e.preventDefault();
+      user.auth(document.getElementById("alias").value, document.getElementById("pass").value);
+    });
+
+    /* fin bien */
+
+
+
+    /* 1 */
+    document.querySelector('#said').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!user.is) { return }
+      user.get('said').set(document.querySelector('#say').value);
+      document.querySelector('#say').value;
+    });
+    /*ok*/
+
+
+    /* 2 */
+    function UI(say, id) {
+      console.log(say);
+      document.querySelector("#escribe").innerHTML = say;
+    };
+    /* ok */
+
+    /* 3 */
+    gun.on('auth', function () {
+      document.querySelector("#sign").style.display = 'none';
+      document.querySelector("#send").style.display = 'block';
+      //$('#sign').hide();
+      user.get('said').map().once(UI);
+    });
+
+  </script>
+
+
+</body>
+
+</html>

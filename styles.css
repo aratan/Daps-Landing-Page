@@ -1,0 +1,15 @@
+
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('moz-extension://b53f8447-8ce7-4dc0-8e2a-25ed0619252e/fonts/open_sans/open-sans-v18-latin-regular.woff');
+  }
+
+  @font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 800;
+    src: url('moz-extension://b53f8447-8ce7-4dc0-8e2a-25ed0619252e/fonts/open_sans/open-sans-v18-latin-800.woff');
+  }
