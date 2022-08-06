@@ -22,7 +22,7 @@ async function loginWithMetaMask() {
   if (!accounts) { return }
 
   window.userWalletAddress = accounts[0]
-  userWallet.innerText = window.userWalletAddress
+  userWallet.innerText = 'Logado'
   loginButton.innerText = 'Sign out of MetaMask'
   console.log('Esta logado')
   user.auth(document.getElementById("alias").value = "aratancoders", document.getElementById("pass").value = window.userWalletAddress);

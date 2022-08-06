@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="files/bootstrap.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
   <link href="styles.css" rel="stylesheet">
   <!--gundb-->
   <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
@@ -77,7 +77,7 @@
       <div id="send">
 
         <form id="said">
-          <input id="say" class="form-control">
+          <input id="say" class="">
           <input id="speak" class="btn btn-secondary " type="submit" value="Envio">
         </form>
       </div>
@@ -94,10 +94,14 @@
     <div class="card-img-overlay">
       <h1 class="card-text">HELLO, WORLD!</h1>
         <!--login metamask-->
-          <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
+          <button id='loginButton' onclick="" class="btn btn-danger">
             Login with MetaMask
           </button>
-          <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+          
+          <span class="badge badge-pill badge-primary">
+            <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+          </span>
+          
         <!--login metamask fin-->
     </div>
   </div>
@@ -554,6 +558,14 @@
     function UI(say, id) {
       console.log(say);
       document.querySelector("#escribe").innerHTML = say;
+      console.log(typeof(say), say, id) //hasta aqui funciona
+      
+       //Pruebas filtro por id funciona
+      if ( id == 'l6htii24K5AgmTt'){
+        console.log(' => ', say); //
+        //document.querySelector("#escribe").innerHTML = say;
+      }
+
     };
     /* ok */
 
