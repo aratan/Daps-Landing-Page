@@ -30,10 +30,9 @@
   <script srv="https://unpkg.com/ipfs@0.63.5/dist/index.min.js"></script>
   
   <!--Personalizado-->
-  <script type="module" src="ipfs.js"></script>
-  <script src="pagos.js" ></script>
-    <script src="streaming.js"></script>
-    <script type="module" src="login.js">  </script>
+  <script type="module" src="ipfs-min.js"></script>
+  <script src="pagos-min.js" ></script>
+  <script type="module" src="login-min.js">  </script>
 
     
   <title>Hello, world!</title>
@@ -46,8 +45,8 @@
   <!-- Menu -->
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span id="link" class="text-muted">Toggleable via the navbar brand.</span>
+      <h5 class="text-white h4">Upload file</h5>
+      <span id="link" class="text-muted">ipfs.</span>
       <form class="d-flex" role="search">
 <!--ipfs inicio-->
         <input type="file" id="upload" class="form-control me-2"/>
@@ -278,7 +277,10 @@
     <div class="card-header"> ... </div>
     <div class="card-body">
       <h5 class="card-title text-dark">Patreon</h5>
-      <p class="card-text text-dark">Patreon and crypto.</p>
+      
+      <p>Account : <input id="Account" class="me-2 border border-white" type="text"> </p>
+      <p>Balance : <input id="Balance" class="me-2 border border-white" type="text"> </p>
+      <button id="checkBalance" class="btn btn-danger">Check Balance</button>
       <button onclick="pagos('0x199e5c66C52cfF0c1097e67e6abea9629240bBBa','0x0099999999')" class="btn btn-primary">Donation</button>
     </div>
     <div class="card-footer text-muted"> ... </div>
@@ -373,7 +375,7 @@
       <!-- Left -->
 
       <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="files/52911hd.jpg" alt="" width="72" height="57">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="files/52911hd.jpg" alt="" width="72" height="57">
 
         <h1 class="display-5 fw-bold">Centered hero</h1>
         <div class="col-lg-6 mx-auto">
@@ -512,72 +514,10 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="files/bootstrap.js">    </script>
   <script src="files/index.js"></script>
-
-  <!--pagos metamask-->
-  <script>
-    
-  </script>
-
+ <script src="gundb-min.js"></script>
+ <script src="saldo.js"></script>
+<script src="web3.min.js"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/gun/examples/jquery.js"></script>-->
-  <!--DBGun-->
-  <script>
-
-    var gun = Gun(['http://localhost:8765/gun', 'https://gunjs.herokuapp.com/gun']);
-    var user = gun.user();
-    var say = [];
-    //auto matic login
-    
-
-    document.querySelector("#send").style.display = 'none';
-    /* inicio bien */
-    document.getElementById("up").addEventListener('click', (e) => {
-      user.create(document.getElementById("alias").value, document.getElementById("pass").value);
-    });
-
-
-    document.getElementById("sign").addEventListener('submit', (e) => {
-      e.preventDefault();
-      user.auth(document.getElementById("alias").value, document.getElementById("pass").value);
-    });
-
-    /* fin bien */
-
-
-
-    /* 1 */
-    document.querySelector('#said').addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!user.is) { return }
-      user.get('said').set(document.querySelector('#say').value);
-      document.querySelector('#say').value;
-    });
-    /*ok*/
-
-
-    /* 2 */
-    function UI(say, id) {
-      console.log(say);
-      document.querySelector("#escribe").innerHTML = say;
-      console.log(typeof(say), say, id) //hasta aqui funciona
-      
-       //Pruebas filtro por id funciona
-      if ( id == 'l6htii24K5AgmTt'){
-        console.log(' => ', say); //
-        //document.querySelector("#escribe").innerHTML = say;
-      }
-
-    };
-    /* ok */
-
-    /* 3 */
-    gun.on('auth', function () {
-      document.querySelector("#sign").style.display = 'none';
-      document.querySelector("#send").style.display = 'block';
-      //$('#sign').hide();
-      user.get('said').map().once(UI);
-    });
-
-  </script>
 
 
   <!--Streaming IPFS -->
