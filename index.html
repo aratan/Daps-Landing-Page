@@ -23,18 +23,21 @@
   <!--<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/hlsjs-ipfs-loader@latest/dist/index.js"></script>-->
-<!--ipfs-->
+  <!--ipfs-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   <script src="https://unpkg.com/ipfs-http-client@30.1.3/dist/index.js"></script>
   <script src="https://bundle.run/buffer@5.2.1"></script>
   <script srv="https://unpkg.com/ipfs@0.63.5/dist/index.min.js"></script>
-  
+
   <!--Personalizado-->
   <script type="module" src="ipfs-min.js"></script>
-  <script src="pagos-min.js" ></script>
+  <script src="pagos-min.js"></script>
   <script type="module" src="login-min.js">  </script>
+  <!--streaming-->
+  <script src="hls.js"></script>
+  <script src="video.js" type="module"></script>
+  
 
-    
   <title>Hello, world!</title>
 
 </head>
@@ -48,9 +51,9 @@
       <h5 class="text-white h4">Upload file</h5>
       <span id="link" class="text-muted">ipfs.</span>
       <form class="d-flex" role="search">
-<!--ipfs inicio-->
-        <input type="file" id="upload" class="form-control me-2"/>
-<!--ipfs fin-->                
+        <!--ipfs inicio-->
+        <input type="file" id="upload" class="form-control me-2" />
+        <!--ipfs fin-->
       </form>
     </div>
   </div>
@@ -92,16 +95,16 @@
     <img src="files/77631.jpg" class="card-img" alt="..." height="350">
     <div class="card-img-overlay">
       <h1 class="card-text">HELLO, WORLD!</h1>
-        <!--login metamask-->
-          <button id='loginButton' onclick="" class="btn btn-danger">
-            Login with MetaMask
-          </button>
-          
-          <span class="badge badge-pill badge-primary">
-            <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
-          </span>
-          
-        <!--login metamask fin-->
+      <!--login metamask-->
+      <button id='loginButton' onclick="" class="btn btn-danger">
+        Login with MetaMask
+      </button>
+
+      <span class="badge badge-pill badge-primary">
+        <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+      </span>
+
+      <!--login metamask fin-->
     </div>
   </div>
 
@@ -165,8 +168,6 @@
           preserveaspectratio="xMidYMid slice" focusable="false" width="500" height="500">
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-
-
         </rect>
       </div>
     </div>
@@ -187,8 +188,6 @@
           preserveaspectratio="xMidYMid slice" focusable="false" width="500" height="500">
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-
-
         </rect>
       </div>
     </div>
@@ -270,18 +269,23 @@
     </div>
   </div>
 
-
+<!--streaming-->
+<center>
+  <h1>Direct - basic tutorial</h1>
+  <video height="600" id="video" controls></video>
+</center>
   <!-- Llamada a la accion -->
 
   <div class="card text-center">
     <div class="card-header"> ... </div>
     <div class="card-body">
       <h5 class="card-title text-dark">Patreon</h5>
-      
+
       <p>Account : <input id="Account" class="me-2 border border-white" type="text"> </p>
       <p>Balance : <input id="Balance" class="me-2 border border-white" type="text"> </p>
       <button id="checkBalance" class="btn btn-danger">Check Balance</button>
-      <button onclick="pagos('0x199e5c66C52cfF0c1097e67e6abea9629240bBBa','0x0099999999')" class="btn btn-primary">Donation</button>
+      <button onclick="pagos('0x199e5c66C52cfF0c1097e67e6abea9629240bBBa','0x0099999999')"
+        class="btn btn-primary">Donation</button>
     </div>
     <div class="card-footer text-muted"> ... </div>
   </div>
@@ -294,8 +298,9 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <video controls="controls" preload="true" width="100%" height="100%" >
-              <source src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
+            <video controls="controls" preload="true" width="100%" height="100%">
+              <source
+                src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
             </video>
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
@@ -319,7 +324,8 @@
         <div class="col">
           <div class="card shadow-sm">
             <video controls="controls" preload="true" width="100%" height="100%">
-              <source src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
+              <source
+                src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
             </video>
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#eee"><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
@@ -342,7 +348,8 @@
         <div class="col">
           <div class="card shadow-sm">
             <video controls="controls" preload="true" width="100%" height="100%">
-              <source src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
+              <source
+                src="https://player.odycdn.com/api/v4/streams/free/NEW-ORDER-This-Time-of-Night-(Mao's-On-Demand-Mix)/4bf28a9a8840e3ad88067a3ad4d3dc6f3d5b7d15/218834.mp4">
             </video>
 
             <div class="card-body">
@@ -514,14 +521,14 @@
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="files/bootstrap.js">    </script>
   <script src="files/index.js"></script>
- <script src="gundb-min.js"></script>
- <script src="saldo.js"></script>
-<script src="web3.min.js"></script>
+  <script src="gundb-min.js"></script>
+  <script src="saldo.js"></script>
+  <script src="web3.min.js"></script>
   <!--<script src="https://cdn.jsdelivr.net/npm/gun/examples/jquery.js"></script>-->
 
 
   <!--Streaming IPFS -->
-  
+
 </body>
 
 </html>
