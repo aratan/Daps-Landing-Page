@@ -4,6 +4,7 @@
 The web is static in ipfs, but it has validation by metamask uploads files by ipfs that are called to power 
 over writing the code with GunDB database distributed in javascript that allows me to update data and 
 as we are transparent we show the donation account and cu current balance. 
+Ok, streaming hls is running
 
 It also allows payments/donations 
 
