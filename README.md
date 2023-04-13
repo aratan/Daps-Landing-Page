@@ -1,5 +1,5 @@
 # MyWeb For Web3 and Unstoppabledomains.com
-##aratancoders.blockchain
+## aratancoders.blockchain
 <br>
 The web is static in ipfs, but it has validation by metamask uploads files by ipfs that are called to power 
 over writing the code with GunDB database distributed in javascript that allows me to update data and 
